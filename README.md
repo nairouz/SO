@@ -3,7 +3,7 @@
 This repository will host the official implementation of the paper  
 [*Sparsity Outperforms Low-Rank Projections in Few-Shot Adaptation*](https://arxiv.org/).
 
-🔧 **Code coming soon!** We are in the process of finalizing the release. Stay tuned!
+🔧 **Code coming soon! Stay tuned!** 
 
 ## 📚 Authors
 - [Nairouz Mrabah](https://scholar.google.com/citations?user=pJm5B2YAAAAJ&hl=en)  
