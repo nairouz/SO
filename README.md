@@ -1,7 +1,6 @@
 # Sparsity Outperforms Low-Rank Projections in Few-Shot Adaptation
 
-This repository will host the official implementation of the paper  
-[*Sparsity Outperforms Low-Rank Projections in Few-Shot Adaptation*](https://arxiv.org/).
+This repository will host the official implementation of the paper [*Sparsity Outperforms Low-Rank Projections in Few-Shot Adaptation*](https://arxiv.org/).
 
 🔧 **Code coming soon! Stay tuned!** 
 
