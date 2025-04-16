@@ -4,7 +4,7 @@ This repository will host the official implementation of the paper [*Sparsity Ou
 
 🔧 **Code coming soon! Stay tuned!** 
 
-## 📚 Authors
+## 👥 Authors
 - [Nairouz Mrabah](https://scholar.google.com/citations?user=pJm5B2YAAAAJ&hl=en)  
 - [Nicolas Richet](https://scholar.google.com/citations?view_op=list_works&hl=fr&hl=fr&user=REJ_xkEAAAAJ)  
 - [Ismail Ben Ayed](https://scholar.google.com/citations?user=29vyUccAAAAJ&hl=en)  
