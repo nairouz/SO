@@ -1,2 +1,0 @@
-Dataset,Shots,Final Test Accuracy
-eurosat,1,73.82716049382717
