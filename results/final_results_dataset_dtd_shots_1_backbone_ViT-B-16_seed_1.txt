@@ -1,0 +1,2 @@
+Dataset,Shots,Final Test Accuracy
+dtd,1,53.90070921985816
