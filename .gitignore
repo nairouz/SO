@@ -1,0 +1,25 @@
+###############################################################################
+# Ignore large training artefacts                                            #
+###############################################################################
+
+# Any results/ or models/ directory anywhere in the tree
+**/results/
+**/results/** 
+**/models/
+**/models/**
+
+# Common heavyweight file types just in case
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.tar
+*.tar.gz
+*.zip
+
+# Runtime clutter
+__pycache__/
+*.py[cod]
+
+# OS files
+.DS_Store
