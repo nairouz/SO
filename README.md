@@ -11,7 +11,7 @@ The official implementation of [*Sparsity Outperforms Low-Rank Projections in Fe
 
 ## 🎨 Approach
 
-This repo introduces Sparse Optimization (SO), a simple optimizer that updates very few parameters per step while keeping the model expressive. SO relies on two paradigms:
+This repo introduces Sparse Optimization (SO), a new efficient optimizer that preserves the model expressivity and mitigates overfitting. SO relies on two paradigms:
 
 * Local sparsity and global density: dynamically update a very tiny subset of weights while the deployed model remains dense. High sparsity is enforced in both the gradient and moment updates while allowing the sparsity support to evolve dynamically throughout training.
 
