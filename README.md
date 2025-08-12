@@ -187,9 +187,12 @@ Run SO on any of the 11 datasets (example below uses DTD and a fixed seed):
 ```
 python main.py \
   --seed 3 \
+  --backbone ViT-B/16 \
+  --shots 1 \
   --root_path /path/to/$DATA \
   --dataset dtd \
-  --shots 1 \
+  --position all \
+  --encoder both \
   --lr 2e-4 \
   --s 0.99995 \
   --t 5 \
@@ -204,9 +207,9 @@ imagenet, sun397, fgvc, eurosat, stanford_cars,
 food101, oxford_pets, oxford_flowers, caltech101, dtd, ucf101
 ```
 
-The code uses the simple prompt “a photo of a [class name]” as in CLIP‑LoRA‑style setups. 
+The code uses the simple prompt “a photo of a [class name]” as in several CLIP adaptation setups. 
 
-See python main.py -h for all flags (e.g., backbone, shots/seed, batch size, learning rate). Hyperparameters consistent with the paper include LR 2e-4, batch size 32, and defaults for κ and T as above.
+See python run_utils.py for all flags (e.g., backbone, shots/seed, batch size, learning rate). Hyperparameters consistent with the paper include LR 2e-4, batch size 32, and defaults for κ and T as above.
 
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
 
