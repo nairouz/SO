@@ -25,6 +25,13 @@ pip install torch==2.4.0+cu124 torchvision==0.19.0+cu124 -f https://download.pyt
 # now install project deps
 pip install -r requirements.txt
 ```
+## 📁 Datasets
+
+We follow the same dataset section/organization as several previous VLM few-shot adaptation methods. Please place all datasets under a single root (e.g., $DATA) and follow the DATASETS.md instructions for download and folder layout. Then pass --root_path $DATA at run time. 
+
+Benchmarks used (11 total): ImageNet‑1k, SUN397, FGVC‑Aircraft, EuroSAT, Stanford Cars, Food‑101, Oxford‑IIIT Pets, Flowers‑102, Caltech‑101, DTD, UCF101. 
+
+The dataset argument values in this repo match the loaders in datasets/ (e.g., imagenet, sun397, fgvc, eurosat, stanford_cars, food101, oxford_pets, oxford_flowers, caltech101, dtd, ucf101).
 
 ## Citation
 
