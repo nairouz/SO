@@ -99,6 +99,22 @@ Arguments you will likely tune:
 
 ## ✨ SO vs LoRA for BERT few-shot Adaptation 
 
+\begin{table}[ht]
+\centering
+\caption{Finetuning BERT (32-shot; stop when $\mathcal{L} \le 10^{-3}$).}
+\scalebox{0.60}{%
+\begin{tabular}{lccccccc}
+\toprule
+Task & \multicolumn{4}{c}{LoRA} & \multicolumn{3}{c}{SO}\\
+\cmidrule(lr){2-5}\cmidrule(lr){6-8}
+ & $r=2$ & $r=4$ & $r=8$ & $r=16$ & $\kappa=0.001\%$ & $\kappa=0.01\%$ & $\kappa=0.1\%$\\
+\midrule
+RTE           & 54.5 & 54.2 & 54.2 & 54.5 & 57.0 & 57.0 & 55.6 \\
+\bottomrule
+\end{tabular}}
+\label{bert}
+\end{table}
+
 ## ⚙️ How to run the code for CLIP few-shot adaptation ?
 
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
