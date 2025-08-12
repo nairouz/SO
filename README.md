@@ -31,13 +31,13 @@ pip install -r requirements.txt
 ```
 SO/
 ├── clip/                # CLIP code (local copy used by this repo)
-├── datasets/            # dataset loaders (imagenet, sun397, fgvc, eurosat, ...
-├── optimizers/          # SO optimizer implementation and variants
+├── datasets/            # dataset loaders (imagenet, sun397, fgvc, eurosat, ...)
+├── optimizers/          # SO optimizer implementation 
 ├── main.py              # entry point (training / eval harness)
 ├── train.py             # training utilities
 ├── run_utils.py         # argument parsing, logging, helpers
 ├── utils.py             # misc utilities
-└── requirements.txt     # minimal dependencies for this repo
+└── requirements.txt     # dependencies for this repo
 ```
 
 ## 🗄️ Datasets
