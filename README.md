@@ -97,6 +97,7 @@ Arguments you will likely tune:
 
 ## ⚙️ How to run the code for BERT few-shot adaptation ?
 
+Extra deps (NLP)
  ```
 pip install "transformers>=4.44" "datasets>=2.20" "peft>=0.11" sentencepiece accelerate scikit-learn
  ```
