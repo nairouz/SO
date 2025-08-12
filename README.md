@@ -42,7 +42,7 @@ SO/
 
 ## 🗄️ Datasets
 
-We follow the same dataset section/organization as several previous VLM few-shot adaptation methods. Please place all datasets under a single root (e.g., $DATA) and follow the DATASETS.md instructions for download and folder layout. Then pass --root_path $DATA at run time. 
+We follow the same dataset section/organization as several previous VLM few-shot adaptation methods. Please place all datasets under a single root (e.g., $DATA) and follow the [DATASETS.md](DATASETS.md) to install the datasets. instructions for download and folder layout. Then pass --root_path $DATA at run time. 
 
 Benchmarks used (11 total): ImageNet‑1k, SUN397, FGVC‑Aircraft, EuroSAT, Stanford Cars, Food‑101, Oxford‑IIIT Pets, Flowers‑102, Caltech‑101, DTD, UCF101. 
 
