@@ -51,7 +51,7 @@ pip install torch==2.4.0+cu124 torchvision==0.19.0+cu124 -f https://download.pyt
 pip install -r requirements.txt
 ```
 
-## ⚙️ How to use the SO ?
+## ⚙️ How to use SO ?
 
 SO is a simple optimizer that can be used to train any model efficiently. The optimizer lives in ``SparseOptimizer.py`` as class ``SO``.
 
