@@ -189,7 +189,7 @@ python main.py \
   --seed 3 \
   --root_path /path/to/$DATA \
   --dataset dtd \
-  --shots 3 \
+  --shots 1 \
   --lr 2e-4 \
   --s 0.99995 \
   --t 5 \
