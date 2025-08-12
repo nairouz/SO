@@ -142,7 +142,7 @@ Edit the list of RANKS inside the script to try other ranks. Results are written
 
 
 Both runners use BERT-base with a balanced 32-shot training subset of GLUE-RTE and stop when the mini-batch loss falls below --loss_stop (default 1e-3). 
-In the SO runner, κ is the kept fraction (1 - density ratio). For example, κ = 5e-5 keeps 0.005% of entries per refresh. The mask is refreshed every T_sparse steps. 
+In the SO runner, κ is the size of the upated fraction. For example, κ = 5e-5 updates 0.005% of entries per refresh. The mask is refreshed every T_sparse steps. 
 
 ## ✨ SO vs LoRA for BERT few-shot Adaptation 
 
