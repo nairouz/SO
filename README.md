@@ -95,7 +95,7 @@ Arguments you will likely tune:
 * T: refresh interval (e.g., 10).
 * lr, betas, weight_decay: like Adam, defaults work well.
 
-## ⚙️ How to run the code for CLIP few-shot adaptation ?
+## ⚙️ How to run the code for BERT few-shot adaptation ?
 
 ## ✨ SO vs LoRA for BERT few-shot Adaptation 
 
