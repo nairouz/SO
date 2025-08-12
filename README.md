@@ -70,9 +70,12 @@ from SparseOptimizer import SO
 
 model = ...  # any nn.Module
 model.train()
+params = [
+    {'params': [param for param in model.parameters() if param.requires_grad], 'dense': False},  
+]
 
 optimizer = SO(
-    model.parameters(),     # like Adam
+    params,                 # like Adam
     lr=3e-4,                # like Adam
     betas=(0.9, 0.999),     # like Adam
     eps=1e-8,               # like Adam
