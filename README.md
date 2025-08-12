@@ -101,7 +101,7 @@ Arguments you will likely tune:
 
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
