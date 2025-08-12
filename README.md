@@ -97,6 +97,54 @@ Arguments you will likely tune:
 
 ## ⚙️ How to run the code for BERT few-shot adaptation ?
 
+ ```
+pip install "transformers>=4.44" "datasets>=2.20" "peft>=0.11" sentencepiece accelerate scikit-learn
+ ```
+
+The scripts auto-download GLUE-RTE via 🤗 Datasets and sample a 32-shot train split with a fixed seed.
+
+Single run — SO (our optimizer)
+ ```
+# from repo root (adjust path if your BERT scripts are elsewhere)
+cd BERT
+python main.py \
+  --device cuda \
+  --kappa 5e-5 \        # fraction kept (density ratio); e.g., 5e-5 = 0.005%
+  --T_sparse 10 \       # refresh interval for the sparse support
+  --loss_stop 1e-3      # stop when mini-batch loss <= this value
+ ```
+Prints final validation accuracy: SO – BERT-base RTE-32shot: XX.X%. 
+
+Single run — LoRA (baseline)
+ ```
+cd BERT
+python main.py \
+  --device cuda \
+  --rank 8 \            # LoRA rank r (try 2, 4, 8, 16)
+  --loss_stop 1e-3      # stop when mini-batch loss <= this value
+ ```
+Prints final validation accuracy: LoRA … BERT-base RTE-32shot: XX.X%. 
+
+Grid sweeps (run multiple settings & save CSV)
+
+
+# SO sweep over (kappa, T) → so_grid_results.csv
+ ```
+cd BERT
+python script.py
+ ```
+Edit the list of KAPPAS and TS inside the script if you want different grids. Results are written to so_grid_results.csv. 
+
+# LoRA sweep over rank r → lora_grid_results.csv
+ ```
+cd BERT
+python script_LoRA.py
+Edit the list of RANKS inside the script to try other ranks. Results are written to lora_grid_results.csv. 
+ ```
+
+Both runners use BERT-base with a balanced 32-shot training subset of GLUE-RTE and stop when the mini-batch loss falls below --loss_stop (default 1e-3). 
+In the SO runner, κ is the kept fraction (density ratio). For example, κ = 5e-5 keeps 0.005% of entries per refresh. The mask is refreshed every T_sparse steps. 
+
 ## ✨ SO vs LoRA for BERT few-shot Adaptation 
 
 <table>
