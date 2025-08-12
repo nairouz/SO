@@ -4,12 +4,13 @@ The official implementation of [*Sparsity Outperforms Low-Rank Projections in Fe
 
 
 ## 👥 Authors
+
 - [Nairouz Mrabah](https://scholar.google.com/citations?user=pJm5B2YAAAAJ&hl=en)  
 - [Nicolas Richet](https://scholar.google.com/citations?view_op=list_works&hl=fr&hl=fr&user=REJ_xkEAAAAJ)  
 - [Ismail Ben Ayed](https://scholar.google.com/citations?user=29vyUccAAAAJ&hl=en)  
 - [Éric Granger](https://scholar.google.ca/citations?user=TmfbdagAAAAJ&hl=en)
 
-## 🎨 Approach
+## 🧠 Approach
 
 This repo introduces Sparse Optimization (SO), a new efficient optimizer that preserves the model expressivity and mitigates overfitting. SO relies on two paradigms:
 
@@ -99,6 +100,10 @@ Arguments you will likely tune:
 ## ⚙️ How to run the code for VLM few-shot adaptation ?
 
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 📚 Citation
 
