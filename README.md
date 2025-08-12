@@ -24,7 +24,6 @@ pip install torch==2.4.0+cu124 torchvision==0.19.0+cu124 -f https://download.pyt
 
 # now install project deps
 pip install -r requirements.txt
-The requirements.txt is intentionally small and only contains what the code actually uses (PyTorch/vision, numpy/scipy, Pillow, tqdm, ftfy, regex, gdown).
 ```
 
 ## Citation
