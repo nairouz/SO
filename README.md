@@ -98,23 +98,37 @@ Arguments you will likely tune:
 ## ⚙️ How to run the code for CLIP few-shot adaptation ?
 
 ## ✨ SO vs LoRA for BERT few-shot Adaptation 
-
-\begin{table}[ht]
-\centering
-\caption{Finetuning BERT (32-shot; stop when $\mathcal{L} \le 10^{-3}$).}
-\scalebox{0.60}{%
-\begin{tabular}{lccccccc}
-\toprule
-Task & \multicolumn{4}{c}{LoRA} & \multicolumn{3}{c}{SO}\\
-\cmidrule(lr){2-5}\cmidrule(lr){6-8}
- & $r=2$ & $r=4$ & $r=8$ & $r=16$ & $\kappa=0.001\%$ & $\kappa=0.01\%$ & $\kappa=0.1\%$\\
-\midrule
-RTE           & 54.5 & 54.2 & 54.2 & 54.5 & 57.0 & 57.0 & 55.6 \\
-\bottomrule
-\end{tabular}}
-\label{bert}
-\end{table}
-
+<table>
+  <caption><strong>Fine-tuning BERT (32-shot; stop when ℒ ≤ 10<sup>−3</sup>).</strong></caption>
+  <thead>
+    <tr>
+      <th rowspan="2" align="left">Task</th>
+      <th colspan="4" align="center">LoRA</th>
+      <th colspan="3" align="center">SO</th>
+    </tr>
+    <tr>
+      <th align="center">r=2</th>
+      <th align="center">r=4</th>
+      <th align="center">r=8</th>
+      <th align="center">r=16</th>
+      <th align="center">κ=0.001%</th>
+      <th align="center">κ=0.01%</th>
+      <th align="center">κ=0.1%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">RTE</td>
+      <td align="center">54.5</td>
+      <td align="center">54.2</td>
+      <td align="center">54.2</td>
+      <td align="center">54.5</td>
+      <td align="center">57.0</td>
+      <td align="center">57.0</td>
+      <td align="center">55.6</td>
+    </tr>
+  </tbody>
+</table>
 ## ⚙️ How to run the code for CLIP few-shot adaptation ?
 
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
