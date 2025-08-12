@@ -91,7 +91,7 @@ for images, labels in dataloader:
  ```
 
 Arguments you will likely tune:
-* density_ratio (1 - κ): fraction of entries kept (e.g., 5e-5 to 1e-3 for very sparse fine-tuning).
+* density_ratio: fraction of entries kept (e.g., 5e-5 to 1e-3 for very sparse fine-tuning).
 * T: refresh interval (e.g., 10).
 * lr, betas, weight_decay: like Adam, defaults work well.
 
