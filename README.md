@@ -124,7 +124,7 @@ python main.py \
   --rank 8 \            # LoRA rank r (try 2, 4, 8, 16)
   --loss_stop 1e-3      # stop when mini-batch loss <= this value
  ```
-Prints final validation accuracy: LoRA … BERT-base RTE-32shot: XX.X%. 
+Prints final validation accuracy: LoRA – BERT-base RTE-32shot: XX.X%. 
 
 Grid sweeps (run multiple settings & save CSV)
 
