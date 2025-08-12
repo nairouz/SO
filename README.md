@@ -98,6 +98,7 @@ Arguments you will likely tune:
 ## ⚙️ How to run the code for CLIP few-shot adaptation ?
 
 ## ✨ SO vs LoRA for BERT few-shot Adaptation 
+
 <table>
   <caption><strong>Fine-tuning BERT (32-shot; stop when ℒ ≤ 10<sup>−3</sup>).</strong></caption>
   <thead>
@@ -129,6 +130,7 @@ Arguments you will likely tune:
     </tr>
   </tbody>
 </table>
+
 ## ⚙️ How to run the code for CLIP few-shot adaptation ?
 
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
