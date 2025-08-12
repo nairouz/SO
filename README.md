@@ -8,7 +8,7 @@ The official implementation of [*Sparsity Outperforms Low-Rank Projections in Fe
 - [Nairouz Mrabah](https://scholar.google.com/citations?user=pJm5B2YAAAAJ&hl=en)  
 - [Nicolas Richet](https://scholar.google.com/citations?view_op=list_works&hl=fr&hl=fr&user=REJ_xkEAAAAJ)  
 - [Ismail Ben Ayed](https://scholar.google.com/citations?user=29vyUccAAAAJ&hl=en)  
-- [Éric Granger](https://scholar.google.ca/citations?user=TmfbdagAAAAJ&hl=en)
+- [Eric Granger](https://scholar.google.ca/citations?user=TmfbdagAAAAJ&hl=en)
 
 ## 🧠 Approach
 
