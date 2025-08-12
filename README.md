@@ -126,22 +126,20 @@ python main.py \
  ```
 Prints final validation accuracy: LoRA – BERT-base RTE-32shot: XX.X%. 
 
-Grid sweeps (run multiple settings & save CSV)
-
-
-# SO sweep over (kappa, T) → so_grid_results.csv
+SO sweep over (kappa, T) → so_grid_results.csv
  ```
 cd BERT
 python script.py
  ```
 Edit the list of KAPPAS and TS inside the script if you want different grids. Results are written to so_grid_results.csv. 
 
-# LoRA sweep over rank r → lora_grid_results.csv
+LoRA sweep over rank r → lora_grid_results.csv
  ```
 cd BERT
 python script_LoRA.py
-Edit the list of RANKS inside the script to try other ranks. Results are written to lora_grid_results.csv. 
  ```
+Edit the list of RANKS inside the script to try other ranks. Results are written to lora_grid_results.csv. 
+
 
 Both runners use BERT-base with a balanced 32-shot training subset of GLUE-RTE and stop when the mini-batch loss falls below --loss_stop (default 1e-3). 
 In the SO runner, κ is the kept fraction (density ratio). For example, κ = 5e-5 keeps 0.005% of entries per refresh. The mask is refreshed every T_sparse steps. 
