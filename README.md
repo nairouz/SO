@@ -213,7 +213,7 @@ See python run_utils.py for all flags (e.g., backbone, shots/seed, batch size, l
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
 
 <table>
-  <caption><strong>SO vs LoRA on ViT-B/16 — 4-shot </strong></caption>
+  <caption><strong>SO vs LoRA with ViT-B/16 — 4-shot </strong></caption>
   <thead>
     <tr>
       <th>Method</th>
