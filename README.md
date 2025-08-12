@@ -11,14 +11,15 @@ The official implementation of [*Sparsity Outperforms Low-Rank Projections in Fe
 
 ## 🎨 Approach
 
-This repo introduces Sparse Optimization (SO), a simple optimizer that updates very few parameters per step while keeping the model expressive.
+This repo introduces Sparse Optimization (SO), a simple optimizer that updates very few parameters per step while keeping the model expressive. SO relies on two paradigms:
 
-* `Local sparsity and global density`: dynamically update a very tiny subset of weights while the deployed model remains dense. Hhigh sparsity is enforced in both the gradient and moment updates while allowing the sparsity support to evolve dynamically throughout training.
+* Local sparsity and global density: dynamically update a very tiny subset of weights while the deployed model remains dense. High sparsity is enforced in both the gradient and moment updates while allowing the sparsity support to evolve dynamically throughout training.
 
-* `Local randomness and global importance`: sparsify gradients via random selection, and prune the optimizer momentums by importance. The gradient captures local and iteration-specific information. The first moment aggregates the gradients over the whole path and, thus, reflects long-term parameter importance. Random pruning of the gradient prevents the model from relying too much on short-term and local high-magnitude updates. The importance-based selection of the first moment ensures that connections with long-term significance are updated.
+* Local randomness and global importance: sparsify gradients via random selection, and prune the optimizer momentums by importance. The gradient captures local and iteration-specific information. The first moment aggregates the gradients over the whole path and, thus, reflects long-term parameter importance. Random pruning of the gradient prevents the model from relying too much on short-term and local high-magnitude updates. The importance-based selection of the first moment ensures that only connections with long-term significance are updated.
 
-Together, these choices curb overfitting, stabilize adaptation in low-data regimes, and reduce memory consumption. Across 11 diverse datasets, SO delivers state-of-the-art few-shot performance with lower memory overhead.
+These choices curb overfitting, stabilize adaptation in low-data regimes, and reduce memory consumption. Across 11 diverse datasets, SO delivers state-of-the-art few-shot performance with lower memory overhead.
 
+<img width="460" height="796" alt="image" src="https://github.com/user-attachments/assets/2e7ca631-40d4-4dc6-9a72-f23520e4da43" />
 
 ## 📁 Project structure
 
