@@ -183,6 +183,31 @@ In the SO runner, κ is the size of the upated fraction. For example, κ = 5e-5 
 
 ## ⚙️ How to run the code for CLIP few-shot adaptation ?
 
+Run SO on any of the 11 datasets (example below uses DTD and a fixed seed):
+```
+python main.py \
+  --seed 3 \
+  --root_path /path/to/$DATA \
+  --dataset dtd \
+  --shots 3 \
+  --lr 2e-4 \
+  --s 0.99995 \
+  --t 5 \
+  --n_iters 2000 \
+  --batch_size 32 \
+  --device "cuda:0" 
+ ```
+  
+Other datasets just change --dataset accordingly:
+```
+imagenet, sun397, fgvc, eurosat, stanford_cars,
+food101, oxford_pets, oxford_flowers, caltech101, dtd, ucf101
+```
+
+The code uses the simple prompt “a photo of a [class name]” as in CLIP‑LoRA‑style setups. 
+
+See python main.py -h for all flags (e.g., backbone, shots/seed, batch size, learning rate). Hyperparameters consistent with the paper include LR 2e-4, batch size 32, and defaults for κ and T as above.
+
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
 
 ## 📜 License
