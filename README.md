@@ -203,8 +203,7 @@ python main.py \
   
 Other datasets just change --dataset accordingly:
 ```
-imagenet, sun397, fgvc, eurosat, stanford_cars,
-food101, oxford_pets, oxford_flowers, caltech101, dtd, ucf101
+imagenet, sun397, fgvc, eurosat, stanford_cars, food101, oxford_pets, oxford_flowers, caltech101, dtd, ucf101
 ```
 
 The code uses the simple prompt “a photo of a [class name]” as in several CLIP adaptation setups. 
@@ -212,6 +211,59 @@ The code uses the simple prompt “a photo of a [class name]” as in several CL
 See python run_utils.py for all flags (e.g., backbone, shots/seed, batch size, learning rate). Hyperparameters consistent with the paper include LR 2e-4, batch size 32, and defaults for κ and T as above.
 
 ## ✨ SO vs LoRA for CLIP few-shot Adaptation  
+
+<table>
+  <caption><strong>SO vs LoRA on ViT-B/16 — 4-shot </strong></caption>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>ImageNet</th>
+      <th>SUN</th>
+      <th>Aircraft</th>
+      <th>EuroSAT</th>
+      <th>Cars</th>
+      <th>Food</th>
+      <th>Pets</th>
+      <th>Flowers</th>
+      <th>Caltech</th>
+      <th>DTD</th>
+      <th>UCF</th>
+      <th>Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LoRA</td>
+      <td>68.5</td>
+      <td>69.7</td>
+      <td>35.2</td>
+      <td>85.2</td>
+      <td>74.8</td>
+      <td>78.7</td>
+      <td>87.9</td>
+      <td>94.1</td>
+      <td>93.9</td>
+      <td>63.5</td>
+      <td>78.2</td>
+      <td>75.4</td>
+    </tr>
+    <tr>
+      <td><strong>SO </strong></td>
+      <td><strong>71.4</strong></td>
+      <td><strong>73.7</strong></td>
+      <td><strong>38.6</strong></td>
+      <td><strong>87.7</strong></td>
+      <td><strong>78.9</strong></td>
+      <td><strong>85.3</strong></td>
+      <td><strong>92.4</strong></td>
+      <td><strong>95.1</strong></td>
+      <td><strong>95.5</strong></td>
+      <td><strong>66.4</strong></td>
+      <td><strong>83.4</strong></td>
+      <td><strong>78.9</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 ## 📜 License
 
