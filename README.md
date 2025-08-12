@@ -17,7 +17,7 @@ This repo introduces Sparse Optimization (SO), a new efficient optimizer that pr
 
 * Local randomness and global importance: sparsify gradients via random selection, and prune the optimizer momentums by importance. The gradient captures local and iteration-specific information. The first moment aggregates the gradients over the whole path and, thus, reflects long-term parameter importance. Random pruning of the gradient prevents the model from relying too much on short-term and local high-magnitude updates. The importance-based selection of the first moment ensures that only connections with long-term significance are updated.
 
-These choices curb overfitting, stabilize adaptation in low-data regimes, and reduce memory consumption. Across 11 diverse datasets, SO delivers state-of-the-art few-shot performance with lower memory overhead.
+These choices mitigate overfitting, stabilize adaptation in low-data regimes, and reduce memory consumption. Across 11 diverse datasets, SO delivers state-of-the-art few-shot performance with lower memory overhead.
 
 <img width="460" height="796" alt="image" src="https://github.com/user-attachments/assets/2e7ca631-40d4-4dc6-9a72-f23520e4da43" />
 
