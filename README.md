@@ -1,4 +1,4 @@
-# Sparsity Outperforms Low-Rank Projections in Few-Shot Adaptation [ICCV 2024]
+# Sparsity Outperforms Low-Rank Projections in Few-Shot Adaptation [ICCV 2025]
 
 The official implementation of [*Sparsity Outperforms Low-Rank Projections in Few-Shot Adaptation*](https://arxiv.org/abs/2504.12436).
 
